@@ -1,0 +1,46 @@
+ui:
+  css_files:
+    - static/overrides.css
+    - static/editor.css
+tei:
+  sections:
+    - name: metadaten
+      title: Metadaten
+      type: metadata
+      selector: /tei:TEI/tei:teiHeader
+    - name: bodytext
+      title: Main text
+      type: text
+      selector: /tei:TEI/tei:text/tei:body
+      sidebar:
+        - title: Blöcke
+          type: toolbar
+          items:
+            - type: set-block
+              block: heading1
+              title: Überschrift, Ebene 1
+              icon: M3,4H5V10H9V4H11V18H9V12H5V18H3V4M14,18V16H16V6.31L13.5,7.75V5.44L16,4H18V16H20V18H14Z
+            - type: set-block
+              block: heading2
+              title: Überschrift, Ebene 2
+              icon: M3,4H5V10H9V4H11V18H9V12H5V18H3V4M21,18H15A2,2 0 0,1 13,16C13,15.47 13.2,15 13.54,14.64L18.41,9.41C18.78,9.05 19,8.55 19,8A2,2 0 0,0 17,6A2,2 0 0,0 15,8H13A4,4 0 0,1 17,4A4,4 0 0,1 21,8C21,9.1 20.55,10.1 19.83,10.83L15,16H21V18Z
+            - type: set-block
+              block: paragraph
+              title: Absatz
+              icon: M4,5H20V7H4V5M4,9H20V11H4V9M4,13H20V15H4V13M4,17H14V19H4V17Z
+        - title: Auszeichnungen
+          type: toolbar
+          items:
+            - type: toggle-mark
+              mark: reading
+              title: Reading
+              icon: M9.6,14L12,7.7L14.4,14M11,5L5.5,19H7.7L8.8,16H15L16.1,19H18.3L13,5H11Z
+        - title: Quellenkürzel
+          type: form
+          condition:
+            node: reading
+          items:
+            - type: input-mark-attribute
+              mark: reading
+              name: wit
+              title: Quellenkürzel
