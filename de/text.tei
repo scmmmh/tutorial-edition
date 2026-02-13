@@ -9,7 +9,9 @@
   </tei:teiHeader>
   <tei:text>
     <tei:body>
-      <tei:p/>
+      <tei:head type="level-1">
+        <tei:seg>Ein historischer Text</tei:seg>
+      </tei:head>
     </tei:body>
   </tei:text>
 </tei:TEI>
