@@ -8,6 +8,8 @@
     </tei:fileDesc>
   </tei:teiHeader>
   <tei:text>
-    <tei:body/>
+    <tei:body>
+      <tei:p/>
+    </tei:body>
   </tei:text>
 </tei:TEI>
