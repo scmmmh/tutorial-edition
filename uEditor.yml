@@ -1,7 +1,7 @@
 ui:
   css_files:
-    - static\styling.css
-    - static\editor.css
+    - static/styling.css
+    - static/editor.css
 tei:
   sections:
     - name: metadaten
