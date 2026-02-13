@@ -14,3 +14,32 @@ sphinx_config:
     - _static
   html_css_files:
     - styling.css
+  tei:
+    blocks:
+    - name: paragraph
+      selector: tei:p
+      tag: p
+    - name: heading1
+      selector: tei:head[@type="level-1"]
+      tag: h3
+    - name: heading2
+      selector: tei:head[@type="level-2"]
+      tag: h4
+    marks:
+    - name: reading
+      selector: tei:rdg
+      attributes:
+        - name: wit
+          type: text
+    sections:
+    - name: metadata
+      type: metadata
+      selector: /tei:TEI/tei:teiHeader
+      fields:
+        - title: Author
+          type: single
+          selector: tei:fileDesc/tei:titleStmt/tei:author/tei:persName/text()
+    - name: bodytext
+      title: Main text
+      type: text
+      selector: /tei:TEI/tei:text/tei:body
