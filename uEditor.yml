@@ -1,7 +1,7 @@
 ui:
   css_files:
-    - static/overrides.css
-    - static/editor.css
+    - static\overrides.css
+    - static\editor.css
 tei:
   sections:
     - name: metadaten
