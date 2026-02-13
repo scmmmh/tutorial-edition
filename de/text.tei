@@ -13,7 +13,9 @@
         <tei:seg>Ein historischer Text</tei:seg>
       </tei:head>
       <tei:p>
-        <tei:seg>Mit ein bissschen Text darin.</tei:seg>
+        <tei:seg>Mit ein </tei:seg>
+        <tei:rdg wit="A">bissschen </tei:rdg>
+        <tei:seg>Text darin.</tei:seg>
       </tei:p>
     </tei:body>
   </tei:text>
