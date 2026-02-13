@@ -9,7 +9,12 @@
   </tei:teiHeader>
   <tei:text>
     <tei:body>
-      <tei:p/>
+      <tei:head type="level-1">
+        <tei:seg>Ein historischer Text</tei:seg>
+      </tei:head>
+      <tei:p>
+        <tei:seg>Mit ein bissschen Text darin.</tei:seg>
+      </tei:p>
     </tei:body>
   </tei:text>
 </tei:TEI>
